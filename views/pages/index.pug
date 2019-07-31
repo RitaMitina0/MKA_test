@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Гостевая книга
+    link(rel="stylesheet", type="text/css", href="./assets/styles/main.css")
+    script(type="text/javascript",src="./assets/scripts/jquery-3.3.1.min.js")
+  body
+    .wrapper
+      main.maincontent
+        .container
+          form.form(action="")
+            .form__content
+              .form__blocks
+                label.form__item
+                  span Имя  
+                  input(type="text", name="user")
+                label.form__item
+                  span Адрес почты  
+                  input(type="text", name="mail" requared)
+                label.form__item
+                  span Текст сообщения
+                  textarea(name="comment")
+                button(type="submit").send__btn Отправить отзыв
+          .comments
+          
